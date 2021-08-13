@@ -13,10 +13,21 @@
   </header>
 
   <main>
+    <div>
+      <form>
+        <div class="new-entry-box new-entry-dimensions display-flex flex-wrap">
+          <label class="flex-basis-full text-align-left" for="Title">Title</label>
+          <input class="flex-basis-100" type="text" name="Title" id="Title">
+          <label class="flex-basis-full text-align-left" for="Content">Body</label>
+          <input class="flex-basis-100" type="text" name="Content" id="Content">
+          <label class="flex-basis-full text-align-left" for="DoBy">Do By</label>
+          <input class="flex-basis-100" type="text" name="DoBy" id="DoBy">
+          <button class="submit-entry-button border-none background-color-none">Submit</button>
+        </div>
+      </form>
+    </div>
+
     <div class="entries-container">
-      <div class="justify-content-center">
-        <button class="new-entry-button border-none background-color-none">New</button>
-      </div>
     </div>
   </main>
 <script src="main.js"></script>
