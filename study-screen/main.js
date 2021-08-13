@@ -51,5 +51,3 @@ const newEntryClicked = () => {
     return;
   }
 }
-
-$NewEntryButton.addEventListener('click', newEntryClicked)
