@@ -41,7 +41,8 @@ const createDomElement = (type, variousClasses, someText) => {
   return newDom;
 }
 
-const newEntryClicked = () => {
+const newEntryClicked = (event) => {
+  event.preventDefaul();
   const newEntryDiv = createDomElement('div', 'justify-content-center', '');
   if (newEntryDiv.textContent !== '') {
     $EntriesContainer.append(newEntryDiv);
