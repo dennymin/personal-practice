@@ -22,6 +22,14 @@ body {
   border: 1px hidden;
 }
 
+.border-solid {
+  border: 1px solid black;
+}
+
+.border-radius-10px {
+  border-radius: 10px;
+}
+
 .background-color-none {
   background-color: rgb(0, 0, 0, 0);
 }
@@ -29,6 +37,19 @@ body {
 .new-entry-dimensions {
   width: 300px;
   margin: 10px auto;
+}
+
+.margin-3px-top-bottom > label,
+.margin-3px-top-bottom > input {
+  margin: 3px 0;
+}
+
+.width-100 {
+  width: 100%;
+}
+
+.margin-top-10px {
+  margin-top: 10px;
 }
 
 /* flexbox */

@@ -15,14 +15,16 @@
   <main>
     <div>
       <form>
-        <div class="new-entry-box new-entry-dimensions display-flex flex-wrap">
+        <div class="new-entry-box new-entry-dimensions display-flex flex-wrap margin-3px-top-bottom">
           <label class="flex-basis-full text-align-left" for="Title">Title</label>
           <input class="flex-basis-100" type="text" name="Title" id="Title">
           <label class="flex-basis-full text-align-left" for="Content">Body</label>
           <input class="flex-basis-100" type="text" name="Content" id="Content">
           <label class="flex-basis-full text-align-left" for="DoBy">Do By</label>
           <input class="flex-basis-100" type="text" name="DoBy" id="DoBy">
-          <button class="submit-entry-button border-none background-color-none">Submit</button>
+          <div class="flex-basis-full justify-content-center width-100 margin-top-10px">
+            <button class="submit-entry-button border-solid border-radius-10px background-color-none">Submit</button>
+          </div>
         </div>
       </form>
     </div>
