@@ -38,7 +38,7 @@ export default class Clock extends React.Component {
     return (
       <div className="center clock-container">
         <h1 className="text-align-center">
-          {timely.getHours()}{ this.state.colon }{timely.getMinutes()}
+          {timely.getHours()}{this.state.colon}{timely.getMinutes()}{this.state.colon}{timely.getSeconds().toString().length === 1 ? '0' + timely.getSeconds().toString() : timely.getSeconds().toString()}
         </h1>
         <h1 className="text-align-center">
           {timely.toDateString()}

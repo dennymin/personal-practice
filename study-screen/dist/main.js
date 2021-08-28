@@ -7829,7 +7829,7 @@ class Clock extends react__WEBPACK_IMPORTED_MODULE_0__.Component {
       className: "center clock-container"
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("h1", {
       className: "text-align-center"
-    }, timely.getHours(), this.state.colon, timely.getMinutes()), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("h1", {
+    }, timely.getHours(), this.state.colon, timely.getMinutes(), this.state.colon, timely.getSeconds().toString().length === 1 ? '0' + timely.getSeconds().toString() : timely.getSeconds().toString()), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("h1", {
       className: "text-align-center"
     }, timely.toDateString()));
   }
