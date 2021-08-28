@@ -7792,12 +7792,25 @@ class Clock extends react__WEBPACK_IMPORTED_MODULE_0__.Component {
   constructor(props) {
     super(props);
     this.state = {
-      date: new Date()
+      date: new Date(),
+      colon: ':'
     };
   }
 
   componentDidMount() {
-    this.timerID = setInterval(() => this.tick(), 1000);
+    this.timerID = setInterval(() => {
+      this.tick();
+
+      if (this.state.colon === ':') {
+        this.setState({
+          colon: ' '
+        });
+      } else if (this.state.colon === ' ') {
+        this.setState({
+          colon: ':'
+        });
+      }
+    }, 1000);
   }
 
   componentWillUnmount() {
@@ -7811,9 +7824,14 @@ class Clock extends react__WEBPACK_IMPORTED_MODULE_0__.Component {
   }
 
   render() {
+    const timely = this.state.date;
     return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
       className: "center clock-container"
-    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("h1", null, "It is ", this.state.date.toLocaleTimeString()));
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("h1", {
+      className: "text-align-center"
+    }, timely.getHours(), this.state.colon, timely.getMinutes(), this.state.colon, timely.getSeconds().toString().length === 1 ? '0' + timely.getSeconds().toString() : timely.getSeconds().toString()), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("h1", {
+      className: "text-align-center"
+    }, timely.toDateString()));
   }
 
 }
