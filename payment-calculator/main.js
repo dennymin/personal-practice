@@ -10,5 +10,5 @@ const receipt = (person, cost, del) => {
   console.log(`${person} please venmo me ${total}`)
 }
 const pals = ['Isaac', 'Paul', 'Heesoo'];
-receipt(pals[0], (9.99 + 11.99 + 7.19));
-receipt(pals[1], (9.99 + 13.18 + 4.59))
+receipt(pals[0], (13.10), true);
+receipt(pals[1], (4.10), true);
