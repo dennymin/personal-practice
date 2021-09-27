@@ -163,6 +163,17 @@
   flex-basis: 60%
 }
 
+@media screen and (min-width: 425px) {
+
+  .enter-to-win {
+    width: 100%;
+    text-align: center;
+    font-size: 4rem;
+    margin-bottom: 50px;
+  }
+
+}
+
 @media screen and (min-width: 500px) {
   .offer-container-backdrop {
     width: 85%;
@@ -170,13 +181,9 @@
 
   .content-container {
     width: 450px;
-
   }
 
   .enter-to-win {
-    width: 100%;
-    text-align: center;
-    font-size: 4rem;
     margin-bottom: 100px;
   }
 
@@ -199,9 +206,20 @@
   .offer-main-text {
     font-size: 2rem;
     text-align: center;
+    min-width: 95%
   }
 
   .enter-now-button {
     width: 450px
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .offer-container-backdrop {
+    width: 649px;
+  }
+
+  .offer-main-text {
+    min-width: 120%;
   }
 }
