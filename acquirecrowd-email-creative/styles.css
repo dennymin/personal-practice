@@ -1,0 +1,114 @@
+* {
+  font-family: calibri
+}
+
+.offer-header-1 {
+  font-weight: bolder
+}
+
+.offer-container {
+  border: 1px hidden;
+  border-radius: 10px;
+  padding: 0px 20px 30px;
+  background-image: url(images/backdrop.png);
+  background-size: cover;
+  background-position: center;
+  margin: auto 10px 10px
+}
+
+.enter-to-win {
+  margin-top: 20px;
+  width: 5rem;
+  font-size: 2.4rem;
+  font-weight: 900;
+  line-height: 2rem
+}
+
+.prize-name {
+  position: relative;
+  bottom: 40px;
+  font-weight: 400
+}
+
+.contain {
+  object-fit: contain;
+}
+
+.prize-image {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  bottom: 30px
+}
+
+.offer-main-text {
+  position: relative;
+  font-weight: 500
+}
+
+.enter-now-button {
+  border: 1px hidden;
+  border-radius: 8px;
+  background-color: #f02464;
+  height: 3rem;
+  width: 90%;
+  font-weight: 900;
+  font-size: large
+}
+
+.white-font {
+  color: white
+}
+
+.lime-green-font {
+  color:rgb(202, 255, 123)
+}
+
+.margin-top-30px {
+  margin-top: 30px;
+}
+
+.margin-bottom-25px {
+  margin-bottom: 25px;
+}
+
+.margin-bottom-15px {
+  margin-bottom: 15px;
+}
+
+.flex-wrap {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.justify-content-center {
+  display: flex;
+  justify-content: center;
+}
+
+.justify-content-flex-start {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.align-items-flex-start {
+  display: flex;
+  align-items: flex-start;
+}
+
+.align-content-flex-start {
+  display: flex;
+  align-content: flex-start;
+}
+
+.flex-basis-100 {
+  flex-basis: 100%;
+}
+
+.flex-basis-40 {
+  flex-basis: 40%
+}
+
+.flex-basis-60 {
+  flex-basis: 60%
+}
