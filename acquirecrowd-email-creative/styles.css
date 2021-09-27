@@ -17,7 +17,7 @@
   padding: 0px 20px 30px;
   background-image: url(images/backdrop.png);
   background-size: cover;
-  background-position: center;
+  background-position: bottom;
   margin: auto 10px 10px;
   width: 95%;
 }
@@ -51,7 +51,7 @@
 
 .position-adjustment {
     position: relative;
-    bottom: 20%;
+    bottom: 10px;
   }
 
 .prize-image {
@@ -76,9 +76,21 @@
   font-size: large
 }
 
+.unsubscribe-link {
+  text-decoration:underline;
+}
+
 .no-style {
   text-decoration: none;
   cursor: default;
+}
+
+.text-align-center {
+  text-align: center;
+}
+
+.margin-0 {
+  margin: 0
 }
 
 .no-style:visited {
@@ -91,6 +103,10 @@
 
 .lime-green-font {
   color:rgb(202, 255, 123)
+}
+
+.light-blue-font {
+  color: rgb(149, 173, 194)
 }
 
 .margin-top-30px {
@@ -149,7 +165,7 @@
 
 @media screen and (min-width: 500px) {
   .offer-container-backdrop {
-    width: 95%;
+    width: 85%;
   }
 
   .content-container {
@@ -164,11 +180,6 @@
     margin-bottom: 100px;
   }
 
-  .position-adjustment {
-    position: relative;
-    bottom: 65px
-  }
-
   .prize-image {
     width: 250px
   }
@@ -181,9 +192,13 @@
     max-width: 100%;
   }
 
+  .offer-header {
+    font-size: 1.6rem
+  }
+
   .offer-main-text {
     font-size: 2rem;
-    text-align: center
+    text-align: center;
   }
 
   .enter-now-button {
