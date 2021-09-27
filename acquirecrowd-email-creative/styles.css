@@ -174,7 +174,7 @@
 
 }
 
-@media screen and (min-width: 500px) {
+@media screen and (min-width: 489px) {
   .offer-container-backdrop {
     width: 85%;
   }
@@ -200,7 +200,7 @@
   }
 
   .offer-header {
-    font-size: 1.6rem
+    font-size: 1.3rem
   }
 
   .offer-main-text {
