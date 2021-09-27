@@ -6,33 +6,44 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="styles.css">
   <title>Email Template</title>
+  <link rel="stylesheet" crossorigin="anonymous" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==">
 </head>
 <body>
   <div class="page-container flex-wrap justify-content-center">
-    <div class="justify-content-center margin-bottom-25px margin-top-30px">
-      <div class="offer-header">
-      <span class="offer-header-1">Hi there!</span><span class="offer-header-2"> We've got an exciting offer for you!</span>
+    <div class="justify-content-center margin-bottom-25px margin-top-30px flex-basis-100">
+      <div class="offer-header align-items-center">
+        <i class="fas fa-gift"></i><span class="offer-header-1">Hi there!</span><span class="offer-header-2"> We've got an exciting offer for you!</span>
       </div>
     </div>
-    <div class="offer-container flex-wrap">
-      <div class="flex-basis-100">
-        <h1 class="enter-to-win white-font">ENTER TO WIN!</h1>
-      </div>
-      <div class="flex-basis-100 justify-content-center">
-        <div class="flex-basis-40 justify-content-flex-start flex-wrap align-content-flex-start">
-          <h4 class="brand-new lime-green-font flex-basis-100">BRAND NEW</h4>
-          <h1 class="prize-name white-font flex-basis-100">Filler</h1>
+
+    <a class="no-style flex-basis-100 justify-content-center" href="">
+      <div class="offer-container-backdrop justify-content-center flex-wrap">
+        <div class="content-container justify-content-center flex-wrap">
+          <div class="flex-basis-100">
+            <h1 class="enter-to-win white-font">ENTER TO WIN!</h1>
+          </div>
+          <div class="flex-basis-100 justify-content-center align-items-center">
+            <div class="flex-basis-40 flex-wrap position-adjustment">
+              <h4 class="brand-new lime-green-font flex-basis-100">BRAND NEW</h4>
+              <h1 class="prize-name white-font flex-basis-100">Filler</h1>
+            </div>
+            <div class="flex-basis-60 justify-content-center">
+              <img class="prize-image contain" src="images/">
+            </div>
+          </div>
+          <div class="flex-basis-100 margin-bottom-15px justify-content-center">
+            <h3 class="offer-main-text white-font"></h3>
+          </div>
+          <div class="flex-basis-100 justify-content-center">
+            <button class="enter-now-button white-font">ENTER NOW</button>
+          </div>
         </div>
-        <div class="flex-basis-60 justify-content-center align-items-flex-start">
-          <img class="prize-image contain" src="images/">
-        </div>
       </div>
-      <div class="flex-basis-100 margin-bottom-15px">
-        <h3 class="offer-main-text white-font"></h3>
-      </div>
-      <div class="flex-basis-100 justify-content-center">
-        <button class="enter-now-button white-font">ENTER NOW</button>
-      </div>
+    </a>
+
+    <div class="justify-content-center flex-wrap text-align-center">
+      <h4 class="flex-basis-100 margin-0 light-blue-font">&copy;2021. All Rights Reserved</h4>
+      <a class="flex-basis-100 unsubscribe-link light-blue-font" href="">Unsubscribe</a>
     </div>
   </div>
   <script src="main.js"></script>

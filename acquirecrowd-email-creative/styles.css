@@ -6,39 +6,59 @@
   font-weight: bolder
 }
 
-.offer-container {
+.offer-header-2 {
+  position: relative;
+  left: 5px
+}
+
+.offer-container-backdrop {
   border: 1px hidden;
   border-radius: 10px;
   padding: 0px 20px 30px;
   background-image: url(images/backdrop.png);
   background-size: cover;
-  background-position: center;
-  margin: auto 10px 10px
+  background-position: bottom;
+  margin: auto 10px 10px;
+  width: 95%;
 }
 
 .enter-to-win {
   margin-top: 20px;
-  width: 5rem;
-  font-size: 2.4rem;
-  font-weight: 900;
-  line-height: 2rem
+  margin-bottom: 50px;
+  width: 10rem;
+  font-size: 4rem;
+  font-weight: bolder;
+  line-height: 3.5rem;
+}
+
+.fa-gift {
+  position: relative;
+  right: 5px;
+  font-size: 1.6rem;
+  color: rgb(190, 224, 125)
 }
 
 .prize-name {
   position: relative;
   bottom: 40px;
-  font-weight: 400
+  font-weight: 400;
+  max-width: 3rem
 }
 
 .contain {
   object-fit: contain;
 }
 
+.position-adjustment {
+    position: relative;
+    bottom: 10px;
+  }
+
 .prize-image {
   width: 100%;
-  height: 100%;
+  height: auto;
   position: relative;
-  bottom: 30px
+  bottom: 30px;
 }
 
 .offer-main-text {
@@ -56,12 +76,37 @@
   font-size: large
 }
 
+.unsubscribe-link {
+  text-decoration:underline;
+}
+
+.no-style {
+  text-decoration: none;
+  cursor: default;
+}
+
+.text-align-center {
+  text-align: center;
+}
+
+.margin-0 {
+  margin: 0
+}
+
+.no-style:visited {
+  text-decoration: none
+}
+
 .white-font {
   color: white
 }
 
 .lime-green-font {
   color:rgb(202, 255, 123)
+}
+
+.light-blue-font {
+  color: rgb(149, 173, 194)
 }
 
 .margin-top-30px {
@@ -96,6 +141,11 @@
   align-items: flex-start;
 }
 
+.align-items-center {
+  display: flex;
+  align-items: center;
+}
+
 .align-content-flex-start {
   display: flex;
   align-content: flex-start;
@@ -111,4 +161,65 @@
 
 .flex-basis-60 {
   flex-basis: 60%
+}
+
+@media screen and (min-width: 425px) {
+
+  .enter-to-win {
+    width: 100%;
+    text-align: center;
+    font-size: 4rem;
+    margin-bottom: 50px;
+  }
+
+}
+
+@media screen and (min-width: 500px) {
+  .offer-container-backdrop {
+    width: 85%;
+  }
+
+  .content-container {
+    width: 450px;
+  }
+
+  .enter-to-win {
+    margin-bottom: 100px;
+  }
+
+  .prize-image {
+    width: 250px
+  }
+
+  .brand-new, .prize-name {
+    font-size: 1.8rem
+  }
+
+  .prize-name {
+    max-width: 100%;
+  }
+
+  .offer-header {
+    font-size: 1.6rem
+  }
+
+  .offer-main-text {
+    font-size: 2rem;
+    text-align: center;
+    min-width: 95%
+  }
+
+  .enter-now-button {
+    width: 450px
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .offer-container-backdrop {
+    width: 649px;
+  }
+
+  .offer-main-text {
+    min-width: 120%;
+  }
 }
