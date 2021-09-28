@@ -42,7 +42,7 @@ const prizes = [
   }
 ]
 
-const prize = prizes[4];
+const prize = prizes[6];
 
 const prizeNameTextContent = prize.name;
 $prizeName.textContent = prizeNameTextContent
