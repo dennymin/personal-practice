@@ -29,6 +29,7 @@
   font-size: 4rem;
   font-weight: bolder;
   line-height: 3.5rem;
+  font-family: "kanit", calibri, sans-serif;
 }
 
 .fa-gift {
@@ -169,7 +170,11 @@
     width: 100%;
     text-align: center;
     font-size: 4rem;
-    margin-bottom: 50px;
+    margin-bottom: 60px;
+  }
+
+    .prize-name {
+      max-width: 95%;
   }
 
 }
