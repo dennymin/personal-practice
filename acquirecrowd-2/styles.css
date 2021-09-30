@@ -3,12 +3,15 @@ body {
   background-color: rgb(246, 246, 246);
 }
 
+.clickable-area {
+  width: 90%;
+  max-width: 768px;
+}
+
 .content-container {
   border: 1px none;
   background-color: white;
   border-radius: 10px;
-  width: 90%;
-  max-width: 768px;
 }
 
 .flex-wrap {
@@ -57,7 +60,7 @@ body {
   font-size: .8rem
 }
 
-.position-relative {
+.position-relative-top-40 {
   position: relative;
   top: 40px;
 }
@@ -65,6 +68,10 @@ body {
 .smaller-header-font {
   font-size: 2rem;
   font-weight: 600
+}
+
+.font-weight-500 {
+  font-weight: 500;
 }
 
 .white-font {
